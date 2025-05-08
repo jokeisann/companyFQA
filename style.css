@@ -1,0 +1,932 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* .w {
+    width: 1440px;
+    margin:auto;
+    display: flex;
+    transform-origin: center;
+} */
+
+.w {
+    width: 1440px;
+    height: 960px;
+    #background-color: antiquewhite;
+    display: flex;
+    position: absolute;
+    /* 使元素脱离文档流 */
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    /* 保持缩放围绕中心 */
+    transform: translate(-50%, -50%);
+    /* 移动元素使其居中 */
+}
+
+.subnav {
+    width: 288px;
+    height: 960px;
+    background-color: black;
+}
+
+.logo {
+    width: 216px;
+    height: 54px;
+    background-color: #fff;
+    margin:33px 36px;
+}
+
+/* 保证图片适应盒子大小 */
+.logo img {
+    max-width: 216px;
+    max-height: 54px;
+    object-fit: contain;
+    /* 确保图片不会被裁剪 */
+}
+
+/* .pagename{ */
+    width: 288px;
+    height: 120px;
+    #background-color: #fff;
+}
+
+.subbar{
+    width: 288px;
+    height: 598px;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+/* 去掉li前面的圆点 */
+li {
+    list-style: none;
+}
+
+.icon-home{
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        background-image: url('images/home.svg');
+        background-size: cover;
+        vertical-align: middle;
+            /* 确保图标和文字对齐 */
+        margin:20px 0px 20px 20px;
+}
+
+.icon-foler{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('images/folder.svg');
+    background-size: cover;
+    vertical-align: middle;
+    /* 确保图标和文字对齐 */
+    margin: 20px 0px 20px 20px;
+}
+
+.icon-info {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('images/message.svg');
+    background-size: cover;
+    vertical-align: middle;
+    /* 确保图标和文字对齐 */
+    margin: 20px 0px 20px 20px;
+}
+
+.icon-FQA {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('images/help.svg');
+    background-size: cover;
+    vertical-align: middle;
+    /* 确保图标和文字对齐 */
+    margin: 20px 0px 20px 20px;
+}
+
+.subbar a{
+    text-decoration: none;
+        /* 取消超链接的默认下划线 */
+}
+
+.subbar ul{
+    display: flex;
+    flex-direction: column;
+    /* 让列表垂直排列 */
+    gap: 12px;
+    /* 直接控制超链接间距 */
+}
+
+.subbar a:hover .home-text{
+    color: #f60;
+    /* 改变字体颜色 */
+}
+
+.subbar a:hover .files-text {
+    color: #f60;
+    /* 改变字体颜色 */
+}
+
+.subbar a:hover .info-text {
+    color: #f60;
+    /* 改变字体颜色 */
+}
+
+.subbar a:hover .FQA-text {
+    color: #f60;
+    /* 改变字体颜色 */
+}
+
+
+/* 让 Home 文字变大 */
+.home-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+.files-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+.info-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+.FQA-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+
+.blank1{
+    width: 120px;
+    height: 1024px;
+    background-color:#fff;
+}
+
+.main{
+    width: 912px;
+    height: 1024px;
+    #background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.blank2 {
+    width: 120px;
+    height: 1024px;
+    background-color: #fff;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    width: 912px;
+    height: 120px;
+    #background-color: antiquewhite;
+}
+
+.search {
+    display: flex;
+    margin-left: 0px;
+    width: 384px;
+    height: 56px;
+    align-items: center;
+
+}
+
+.search input {
+    width: 334px;
+    height: 48px;
+    border: 1px solid #e5e2e2;
+    background-color: #e5e2e2;
+}
+
+.search button {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: url(images/search.svg) no-repeat center;
+    background-size: contain;
+    background-color: #e5e2e2
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: flex-end;
+    /* 让内容靠右对齐 */
+    width: 100%;
+    height: 54px;
+    /* 设定合适的高度 */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user img {
+    width: 54px;
+    /* 头像大小 */
+    height: 54px;
+    margin-left: 2px;
+    /* 让图片和文字之间留点间距 */
+    margin-right: 8px;
+    /* 让图片和右侧有点距离 */
+}
+
+.page-text {
+    display: flex;
+    /* 让 ul 水平排列 */
+    align-items: center;
+    /* 确保垂直居中 */
+    width:912px;
+    height:120px;
+    #background-color: aliceblue;
+    font-size: 24px;
+}
+
+.page-text ul {
+    display: flex;
+    /* 让 li 水平排列 */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.page-text li {
+    margin-right: 10px;
+    /* 让菜单项之间有间距 */
+}
+
+.page-text a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 0px 2px;
+}
+
+.page-text a:hover {
+    color: #ff6347;
+    /* 当鼠标悬停时，文字变成番茄红 */
+}
+
+.middle{
+    width: 912px;
+    height: 600px;
+    display: flex;
+    #background-color: beige;
+}
+
+.menu {
+    width: 711px;
+    height: 600px;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    #background-color:#000;
+}
+
+.blank3 {
+    width: 216px;
+    height: 600px;
+    display: flex;
+    #background-color:#e5e2e2
+}
+
+.box1 {
+    width: 696px;
+    height: 144px;
+    display: flex;
+    #background-color: antiquewhite;
+    margin: 0px 0px 56px 0px ;
+}
+
+.box2 {
+    width: 696px;
+    height: 144px;
+    display: flex;
+    #background-color: antiquewhite;
+    margin: 0px 0px 56px 0px;
+}
+
+.box3 {
+    width: 696px;
+    height: 144px;
+    display: flex;
+    #background-color: antiquewhite;
+}
+
+.soumu {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.soumu:hover{
+    background-color: #aba7a7;
+}
+
+.keiri {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    margin-left: auto;
+    /* 自动推到右侧 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.keiri:hover {
+    background-color: #aba7a7;
+}
+
+.houmu {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.houmu:hover {
+    background-color: #aba7a7;
+}
+
+.IT {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    margin-left: auto;
+    /* 自动推到右侧 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.IT:hover {
+    background-color: #aba7a7;
+}
+
+.fukuri {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.fukuri:hover {
+    background-color: #aba7a7;
+}
+
+.hoka {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    margin-left: auto;
+    /* 自动推到右侧 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.hoka:hover {
+    background-color: #aba7a7;
+}
+
+.help-button {
+    position: fixed;
+    /* 固定定位 */
+    bottom: 208px;
+    /* 距离底部20px */
+    right: 127px;
+    /* 距离右侧20px */
+    width: 50px;
+    /* 按钮宽度 */
+    height: 50px;
+    /* 按钮高度 */
+    background-color:#000;
+    /* 按钮背景色 */
+    color: white;
+    /* 按钮文字颜色 */
+    border-radius: 50%;
+    /* 圆形按钮 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* 鼠标悬停时显示指针 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* 添加阴影效果 */
+    z-index: 1000;
+    /* 确保按钮在其他元素上面 */
+}
+
+.help-button:hover {
+    background-color: #f60;
+    /* 悬停时的背景色 */
+}
+
+
+
+
+
+
+
+/* 総務・人事ページ */
+.icon-soumu {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('images/soumu.svg');
+    background-size: cover;
+    vertical-align: middle;
+    /* 确保图标和文字对齐 */
+    margin: 20px 0px 20px 20px;
+}
+
+.icon-keiri {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('images/keiri.svg');
+    background-size: cover;
+    vertical-align: middle;
+    /* 确保图标和文字对齐 */
+    margin: 20px 0px 20px 20px;
+}
+
+.icon-houmu {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('images/houmu.svg');
+    background-size: cover;
+    vertical-align: middle;
+    /* 确保图标和文字对齐 */
+    margin: 20px 0px 20px 20px;
+}
+
+.icon-IT {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('images/it.svg');
+    background-size: cover;
+    vertical-align: middle;
+    /* 确保图标和文字对齐 */
+    margin: 20px 0px 20px 20px;
+}
+
+.icon-fukuri {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('images/fukuri.svg');
+    background-size: cover;
+    vertical-align: middle;
+    /* 确保图标和文字对齐 */
+    margin: 20px 0px 20px 20px;
+}
+
+.icon-hoka {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('images/hoka.svg');
+    background-size: cover;
+    vertical-align: middle;
+    /* 确保图标和文字对齐 */
+    margin: 20px 0px 20px 20px;
+}
+
+.icon-toi {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('images/toi.svg');
+    background-size: cover;
+    vertical-align: middle;
+    /* 确保图标和文字对齐 */
+    margin: 20px 0px 20px 20px;
+}
+
+.soumu-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+.keiri-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+.houmu-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+.IT-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+.fukuri-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+.hoka-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+.toi-text {
+    font-size: 20px;
+    /* 增大字体 */
+    font-weight: bold;
+    /* 可选，让字体加粗 */
+    color: #fff;
+    /* 可选，调整颜色 */
+    vertical-align: middle;
+    /* 让文字和图标对齐 */
+    margin: 20px 0px 0px 0px;
+}
+
+.subbar a:hover .soumu-text {
+    color: #f60;
+    /* 改变字体颜色 */
+}
+
+.subbar a:hover .keiri-text {
+    color: #f60;
+    /* 改变字体颜色 */
+}
+
+.subbar a:hover .houmu-text {
+    color: #f60;
+    /* 改变字体颜色 */
+}
+
+.subbar a:hover .IT-text {
+    color: #f60;
+    /* 改变字体颜色 */
+}
+
+.subbar a:hover .fukuri-text {
+    color: #f60;
+    /* 改变字体
+    颜色 */
+}
+
+.subbar a:hover .hoka-text {
+    color: #f60;
+    /* 改变字体颜色 */
+}
+
+.subbar a:hover .toi-text {
+    color: #f60;
+    /* 改变字体颜色 */
+}
+
+.soumupage-text {
+    display: flex;
+    /* 让 ul 水平排列 */
+    align-items: center;
+    /* 确保垂直居中 */
+    width: 912px;
+    height: 120px;
+    #background-color: aliceblue;
+    font-size: 20px;
+}
+
+.soumupage-text ul {
+    display: flex;
+    /* 让 li 水平排列 */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.soumupage-text li {
+    margin-right: 10px;
+    /* 让菜单项之间有间距 */
+}
+
+.soumupage-text a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 0px 2px;
+}
+
+.soumupage-text a:hover {
+    color: #ff6347;
+    /* 当鼠标悬停时，文字变成番茄红 */
+}
+
+
+.soumutitle{
+    padding: 12px;
+    font-size: 20px;
+    background: #aba7a7;
+        /* 让它看起来像标题 */
+    border-radius: 5px;
+    font-weight: bold;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    margin:0px 0px 8px 0px;
+    }
+
+.soumumenu {
+    width: 696px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    #background-color: #000;
+}
+
+details {
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background: #f9f9f9;
+}
+
+summary {
+    cursor: pointer;
+    padding: 8px;
+    font-size: 20px;
+    background: #eee;
+    border-radius: 5px;
+    height: 48px;
+    line-height: 48px;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    /* 让文本在左，三角形在右 */
+    align-items: center;
+    /* 垂直居中 */
+}
+
+summary::-webkit-details-marker {
+    display: none;
+    /* 隐藏默认三角符号（WebKit 浏览器） */
+}
+
+summary::after {
+    content: ">";
+    /* 手动添加三角符号 */
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+    /* 展开时翻转三角形 */
+}
+
+summary:hover {
+    background: #ddd;
+}
+
+details[open] summary {
+    background: #ccc;
+}
+
+details div {
+    padding: 8px;
+    background: white;
+}
+
+.kyuka {
+    padding: 10px;
+    background: white;
+}
+
+ .kyuka p { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.kyukaicon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.kyukaicon:hover {
+    opacity: 0.7;
+}
+
+
+/* 問い合わせ */
+.toititle {
+    padding: 4px;
+    font-size: 24px;
+    #background: #aba7a7;
+    /* 让它看起来像标题 */
+    border-radius: 5px;
+    font-weight: bold;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 8px 0px;
+    justify-content: center;
+}
+
+.toimenu {
+    width: 696px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    #background-color: #000;
+}
+
+.clarification{
+    width: 696px;
+    height:174px;
+    background-color: #ccc;
+}
+
+.clarification p{
+    padding: 12px;
+    font-size: 16px;
+}
+
+.toibox1 {
+    width: 696px;
+    height: 144px;
+    display: flex;
+    #background-color: antiquewhite;
+    margin: 32px 0px 56px 0px;
+}
+
+.toibox2 {
+    width: 696px;
+    height: 144px;
+    display: flex;
+    #background-color: antiquewhite;
+    margin: 0px 0px 56px 0px;
+}
+
+.toibox3 {
+    width: 696px;
+    height: 144px;
+    display: flex;
+    #background-color: antiquewhite;
+}
+
+.soumumail {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.keirimail {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    margin-left: auto;
+    /* 自动推到右侧 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.houmumail {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ITmail {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    margin-left: auto;
+    /* 自动推到右侧 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fukurimail {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hokamail {
+    width: 312px;
+    height: 144px;
+    background-color: #e5e2e2;
+    margin-left: auto;
+    /* 自动推到右侧 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
